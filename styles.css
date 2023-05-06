@@ -25,7 +25,7 @@
 
 body {
     background-color:#C8C8C8;
-    background-color:#142B62 ;
+    background-color:#3c3f4b ;
     font-family: montserrat, sans-serif;
     text-align: center;
     
@@ -33,22 +33,18 @@ body {
 }
 
 h1{
-    font-family: virgo, sans-serif;
+    font-family: aileronbold, sans-serif;
     text-align: center;
-    color: #142B62 ;
+    
     color: white;
-    text-size-adjust: 115%;
+    text-size-adjust: 250%;
 }
-
-header {
-    font-family: bebas, sans-serif;
-    color:#2E66F0;
-    text-align: right;
-    margin-bottom: 15px;
-    font-size:120%;
-    padding-top: 20px;
-    padding-right: 20px;
-
+h4{
+    font-family: aileronbold, sans-serif;
+    text-align: center;
+    
+    color: white;
+    text-size-adjust: 100%;
 }
 
 nav{
@@ -69,11 +65,11 @@ nav a{
     
 }
 a:link {
-    color:#BCCCF3;
+    color:#f9a533;
 
 }
 a:visited{
-    color:#BCCCF3 ;
+    color:#f9a533;
     
 }
 a:hover{
@@ -90,12 +86,12 @@ a:hover{
 
 h2 {
     font-family: virgo, sans-serif;
-    color:#142B62 ;
+    color:#3c3f4b ;
 }
 
 p {
     font-family: aileron, sans-serif;
-    color:#142B62;
+    color:#3c3f4b;
     text-align: left;
 }
 
@@ -114,7 +110,7 @@ img{
     border-radius: 25px;
    
     margin: auto;
-    border:  5px solid #2E66F0;
+    border:  5px solid #f9a533;
     
     padding-bottom: 30px;
     padding-left: 30px;
@@ -131,7 +127,7 @@ img{
     border-radius: 25px;
    
     margin: auto;
-    border:  5px solid #2E66F0;
+    border:  5px solid #f9a533;
     
     padding-bottom: 15px;
     padding-top:15px;
@@ -143,15 +139,74 @@ img{
 
 }
 
+.clearbox {
+    
+    
+    border-radius: 25px;
+   
+    margin: auto;
+    border:  5px solid #f9a533;
+    
+    padding-bottom: 15px;
+    padding-top:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    width:85%;
+    line-height: 1.5;
+
+}
+
+.clearbox p{
+    color:white;
+}
+
 
 .pagetitle{
     padding-top:15px;
     padding-bottom: 25px;
 }
 
-    
-    
+header {
+    text-align: right;
+    margin-bottom: 5px;
+    font-size:120%;
+    padding-top: 20px;
+    padding-right: 20px;
+   
 
+}
+header p{
+    color:white; 
+    font-size: 75%; 
+    text-align: right;
+    font-family: virgo, sans-serif;
+}
 
+.border{
+	--b: .1em; /* border width */
+	--c: 8em; /* corner size */
+	--r: 0em; /* corner rounding */
+	position: relative;
+	margin: 1em auto;
+	border: solid var(--b) transparent;
+	padding: 1em;
 
-
+	
+	&::before {
+		position: absolute;
+		z-index: -1;
+		inset: calc(-1*var(--b));
+		border: inherit;
+		border-radius: var(--r);
+		background: white border-box;
+		--corner: 
+			conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 
+				0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+		--inner: conic-gradient(red 0 0) padding-box;
+		-webkit-mask: var(--corner), var(--inner);
+		-webkit-mask-composite: source-out;
+						mask: var(--corner) subtract, var(--inner);
+		content: ''
+	}
+}
