@@ -28,27 +28,29 @@ body {
     background-color:#3c3f4b ;
     font-family: montserrat, sans-serif;
     text-align: center;
+    margin: auto;
     
     
 }
+
 
 h1{
     font-family: aileronbold, sans-serif;
     text-align: center;
     
     color: white;
-    text-size-adjust: 250%;
+    font-size: 36px;
 }
 h4{
     font-family: aileronbold, sans-serif;
     text-align: center;
     
     color: white;
-    text-size-adjust: 100%;
+    text-size-adjust: 20px;
 }
 
 nav{
-    font-family: virgo, sans-serif;
+    font-family: aileron, sans-serif;
     text-align: left;
     padding-left: 30px;
     
@@ -81,6 +83,8 @@ a:hover{
     float: left;
     width: 50%;
     text-align: center;
+    
+
       
 }
 
@@ -93,6 +97,7 @@ p {
     font-family: aileron, sans-serif;
     color:#3c3f4b;
     text-align: left;
+    font-size: 24px;
 }
 
 
@@ -139,23 +144,6 @@ img{
 
 }
 
-.clearbox {
-    
-    
-    border-radius: 25px;
-   
-    margin: auto;
-    border:  5px solid #f9a533;
-    
-    padding-bottom: 15px;
-    padding-top:15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 30px;
-    width:85%;
-    line-height: 1.5;
-
-}
 
 .clearbox p{
     color:white;
@@ -174,7 +162,6 @@ header {
     padding-top: 20px;
     padding-right: 20px;
    
-
 }
 header p{
     color:white; 
@@ -183,30 +170,15 @@ header p{
     font-family: virgo, sans-serif;
 }
 
-.border{
-	--b: .1em; /* border width */
-	--c: 8em; /* corner size */
-	--r: 0em; /* corner rounding */
-	position: relative;
-	margin: 1em auto;
-	border: solid var(--b) transparent;
-	padding: 1em;
 
-	
-	&::before {
-		position: absolute;
-		z-index: -1;
-		inset: calc(-1*var(--b));
-		border: inherit;
-		border-radius: var(--r);
-		background: white border-box;
-		--corner: 
-			conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 
-				0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
-		--inner: conic-gradient(red 0 0) padding-box;
-		-webkit-mask: var(--corner), var(--inner);
-		-webkit-mask-composite: source-out;
-						mask: var(--corner) subtract, var(--inner);
-		content: ''
-	}
+img {
+    outline: 1px solid white;
+    outline-offset: 10px;
+    align-items: center;
+    margin:auto;
+    
+}
+.noborder{
+    outline: 0px;
+    padding-bottom: 0px;
 }
