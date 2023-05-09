@@ -41,6 +41,13 @@ h1{
     color: white;
     font-size: 36px;
 }
+h3{
+    font-family: aileronbold, sans-serif;
+    text-align: center;
+    
+    color: white;
+    text-size-adjust: 28px;
+}
 h4{
     font-family: aileronbold, sans-serif;
     text-align: center;
@@ -88,6 +95,14 @@ a:hover{
 
       
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 30px;
+}
+
 
 h2 {
     font-family: virgo, sans-serif;
