@@ -83,6 +83,7 @@ a:hover{
     float: left;
     width: 50%;
     text-align: center;
+    display: inline-block;
     
 
       
@@ -91,6 +92,8 @@ a:hover{
 h2 {
     font-family: virgo, sans-serif;
     color:#3c3f4b ;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 p {
@@ -100,13 +103,9 @@ p {
     font-size: 24px;
 }
 
-
-
-
-img{
-    margin:auto;
-    
-    
+.onbackground{
+    color:white; 
+    line-height: 1.5em;
 }
 
 
@@ -175,7 +174,6 @@ img {
     outline: 1px solid white;
     outline-offset: 10px;
     align-items: center;
-    margin:auto;
     
 }
 .noborder{
